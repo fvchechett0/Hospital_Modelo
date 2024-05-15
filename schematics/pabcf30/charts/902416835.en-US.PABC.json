@@ -1,0 +1,42 @@
+{
+  "identifier" : "PABC",
+  "migrations" : [ {
+    "op" : "replace",
+    "path" : "/",
+    "value" : {
+      "description" : "Type of encounter",
+      "mainChartSerie" : {
+        "attributeAxisX" : "DS_TIPO_ATENDIMENTO",
+        "attributeAxisY" : "QT_ATENDIMENTO",
+        "graphicPresentationMethod" : "B",
+        "increaseRuleValue" : "P",
+        "mainSerie" : true,
+        "noMarker" : false,
+        "query" : "select\tsubstr(obter_valor_dominio(12, ie_tipo_atendimento),1,255) ds_tipo_atendimento,\n\tcount(1) qt_atendimento\nfrom\tatendimento_paciente a\t\nwhere\ta.cd_medico_resp = :cd_medico_resp\ngroup by ie_tipo_atendimento\norder by ds_tipo_atendimento",
+        "serieExpressionCode" : 299546,
+        "serieExpressionDescription" : "Type of encounter",
+        "serieId" : 902416836,
+        "series" : [ ],
+        "visible" : false
+      },
+      "propertiesNew" : {
+        "alwaysShowY2" : "N",
+        "applySort" : "N",
+        "checkReportRelease" : "S",
+        "hideLegend" : "N",
+        "rotatedText" : "N",
+        "showEmptyValues" : "N",
+        "showSlider" : "N",
+        "showValue" : "S",
+        "showXGrid" : "N",
+        "showYGrid" : "N",
+        "sortAscending" : "S",
+        "tooltipGrouped" : "S",
+        "withZoom" : "N"
+      },
+      "title" : "Type of encounter",
+      "titleExpressionCode" : 299546
+    }
+  } ],
+  "type" : "PARTNER"
+}

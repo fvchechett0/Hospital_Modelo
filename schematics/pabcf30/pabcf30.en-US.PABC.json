@@ -1,0 +1,141 @@
+{
+  "identifier" : "PABC",
+  "migrations" : [ {
+    "op" : "replace",
+    "path" : "/",
+    "value" : {
+      "avoidMemoryLeaks" : true,
+      "dialogs" : [ ],
+      "disableDeveloperBar" : false,
+      "externalAccessItens" : {
+        "ALL_FEATURES" : [ ],
+        "SPOTLIGHT_FEATURES" : [ ]
+      },
+      "featureCode" : 99676,
+      "globalPopups" : [ ],
+      "metadataToFile" : true,
+      "noDataExpressionCode" : 397569,
+      "children" : [ {
+        "children" : [ {
+          "children" : [ {
+            "children" : [ {
+              "children" : [ {
+                "children" : [ {
+                  "children" : [ {
+                    "children" : [ {
+                      "chartType" : "B",
+                      "children" : [ ],
+                      "code" : 902411049,
+                      "componentType" : "WCHART",
+                      "customProperties" : {
+                        "checkReportRelease" : "S",
+                        "showValue" : "S",
+                        "sortAscending" : "S",
+                        "tooltipGrouped" : "S",
+                        "withZoom" : "N"
+                      },
+                      "description" : "WChart",
+                      "dictionaryCode" : 902416835,
+                      "displayOrder" : 1,
+                      "metadataFile" : true,
+                      "objectType" : "COMPONENT",
+                      "params" : [ {
+                        "function" : 0,
+                        "masterCode" : 902297660,
+                        "masterName" : "CD_MEDICO_RESP",
+                        "originParam" : "OBJECT",
+                        "parameterCode" : 0,
+                        "parameterName" : "CD_MEDICO_RESP",
+                        "parameterSeq" : 0,
+                        "parentObjectCode" : 902411049
+                      } ],
+                      "parentObjectCode" : 902401203,
+                      "reports" : [ ]
+                    } ],
+                    "code" : 902401203,
+                    "description" : "Region 0",
+                    "displayOrder" : 1,
+                    "metadataFile" : false,
+                    "objectType" : "REGION",
+                    "parentObjectCode" : 902401202
+                  } ],
+                  "code" : 902401202,
+                  "description" : "Master region",
+                  "masterRegionType" : "LAYOUT_A",
+                  "metadataFile" : false,
+                  "objectType" : "MASTER_REGION",
+                  "parentObjectCode" : 902395856
+                } ],
+                "code" : 902395856,
+                "description" : "Panel",
+                "displayOrder" : 1,
+                "expressionCode" : 314879,
+                "expressionDescription" : "Panel",
+                "metadataFile" : false,
+                "objectType" : "PANEL",
+                "panelWidth" : 8,
+                "parentObjectCode" : 902297660
+              } ],
+              "code" : 902297660,
+              "componentType" : "WCPANEL",
+              "customProperties" : {
+                "showDynamicReport" : "N"
+              },
+              "description" : "Physicians",
+              "dictionaryCode" : 902317643,
+              "displayOrder" : 1,
+              "legends" : [ ],
+              "metadataFile" : true,
+              "objectType" : "COMPONENT",
+              "params" : [ ],
+              "parentObjectCode" : 902290320,
+              "properties" : {
+                "autoCreateChild" : true,
+                "editableGrid" : false,
+                "emptyActivation" : false,
+                "multiSelection" : false,
+                "paginationType" : "P",
+                "reportConfigVisible" : false,
+                "saveGridColumnOrder" : false,
+                "selectFirstRow" : true,
+                "unificarCountRegistros" : false,
+                "useNewGrid" : true
+              },
+              "reports" : [ ]
+            } ],
+            "code" : 902290320,
+            "description" : "Region 0",
+            "displayOrder" : 1,
+            "metadataFile" : false,
+            "objectType" : "REGION",
+            "parentObjectCode" : 902290319
+          } ],
+          "code" : 902290319,
+          "description" : "Master region",
+          "masterRegionType" : "LAYOUT_A",
+          "metadataFile" : false,
+          "objectType" : "MASTER_REGION",
+          "parentObjectCode" : 902284065
+        } ],
+        "code" : 902284065,
+        "description" : "Panel",
+        "displayOrder" : 1,
+        "expressionCode" : 314879,
+        "expressionDescription" : "Panel",
+        "metadataFile" : false,
+        "objectType" : "PANEL",
+        "panelWidth" : 12,
+        "parentObjectCode" : 99676
+      } ],
+      "code" : 99676,
+      "componentType" : "WSCH",
+      "description" : "Schematic 42",
+      "metadataFile" : false,
+      "objectType" : "SCHEMATIC",
+      "parentObjectCode" : 0,
+      "useExperimentalHttp" : false,
+      "useExperimentalLogger" : false
+    }
+  } ],
+  "type" : "PARTNER"
+}
