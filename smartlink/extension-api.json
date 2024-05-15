@@ -1,0 +1,76 @@
+[
+    {
+        "id": "02d8da1b2db80f5f",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "728941b89c1586b2",
+        "type": "interceptor",
+        "z": "02d8da1b2db80f5f",
+        "name": "Conversion Micromedex",
+        "url": "",
+        "view": "83077",
+        "method": "post",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 170,
+        "y": 360,
+        "wires": [
+            [
+                "0924241e704f9ca9"
+            ]
+        ]
+    },
+    {
+        "id": "0924241e704f9ca9",
+        "type": "function",
+        "z": "02d8da1b2db80f5f",
+        "name": "Restrictions",
+        "func": "let record = msg.payload.records;\n\nif (msg.payload.eventMoment == 'BEFORE'){\n    if(record.GFC_CODE == \"\" || record.GFC_CODE === undefined){\n        msg.payload.records.GFC_CODE = 123;\n    } else if (record.GFC_CODE == 456) {\n        msg.payload.records.GFC_CODE = 888;\n    } else if (msg.payload.records.GFC_CODE == 3030){\n        msg.payload.abort = 'This value is invalid';\n    }\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 450,
+        "y": 360,
+        "wires": [
+            [
+                "18afcf78ebad0989",
+                "555be22ddb680ac8"
+            ]
+        ]
+    },
+    {
+        "id": "18afcf78ebad0989",
+        "type": "debug",
+        "z": "02d8da1b2db80f5f",
+        "name": "debug 2",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 780,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "555be22ddb680ac8",
+        "type": "http response",
+        "z": "02d8da1b2db80f5f",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 770,
+        "y": 360,
+        "wires": []
+    }
+]

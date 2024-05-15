@@ -1,0 +1,54 @@
+{
+  "identifier" : "PABC",
+  "migrations" : [ {
+    "op" : "replace",
+    "path" : "/",
+    "value" : {
+      "columns" : [ {
+        "componente" : "TEXTBOX",
+        "configurableType" : "N",
+        "ieReadOnly" : true,
+        "ieTotalizar" : false,
+        "ieUnidLargura" : "PX",
+        "ieVisible" : true,
+        "inlineComponente" : "ed",
+        "labelColuna" : "Code ",
+        "labelExpressionCode" : 285358,
+        "layout" : "T",
+        "nmCampoBase" : "CD_MEDICO_RESP",
+        "nrSequencia" : 902332544,
+        "ordem" : 10,
+        "qtLargura" : 100,
+        "sensitive" : false,
+        "tipoColuna" : "Varchar",
+        "tipoTotalizador" : "N",
+        "userCanConfig" : true
+      }, {
+        "componente" : "TEXTBOX",
+        "configurableType" : "N",
+        "ieReadOnly" : true,
+        "ieTotalizar" : false,
+        "ieUnidLargura" : "PX",
+        "ieVisible" : true,
+        "inlineComponente" : "ed",
+        "labelColuna" : "Name",
+        "labelExpressionCode" : 294174,
+        "layout" : "T",
+        "nmCampoBase" : "NM_PESSOA_FISICA",
+        "nrSequencia" : 902347481,
+        "ordem" : 20,
+        "qtLargura" : 200,
+        "sensitive" : false,
+        "tipoColuna" : "Varchar",
+        "tipoTotalizador" : "N",
+        "userCanConfig" : true
+      } ],
+      "configurable" : "N",
+      "description" : "Physicians",
+      "query" : "select\ta.cd_medico_resp,\n\tb.nm_pessoa_fisica\nfrom\tatendimento_paciente a,\n\tpessoa_fisica b\nwhere\ta.cd_medico_resp = b.cd_pessoa_fisica\nand\trownum < 100\ngroup by a.cd_medico_resp,\n\tb.nm_pessoa_fisica\norder by nm_pessoa_fisica",
+      "title" : "Physicians ",
+      "titleExpressionCode" : 293166
+    }
+  } ],
+  "type" : "PARTNER"
+}
