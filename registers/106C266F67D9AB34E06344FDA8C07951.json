@@ -1,0 +1,50 @@
+{ "changes" : [{
+"event_info":{
+"sequence":"105923",
+"guid":"106C266F67D8AB34E06344FDA8C07951",
+"tag_name":"CMDK",
+"date":"02\/02\/2024 16:48:52",
+"table_name":"FUNCAO",
+"dml_operation":"UPDATE",
+"tasy_user":"srcunha",
+"date_format":"dd\/mm\/rrrr hh24:mi:ss" 
+}
+,
+"session_info":{
+"tasy_user":"srcunha",
+"os_user":"tomcat",
+"machine":"srv-tomcat.whebdc.com.br" 
+}
+,
+"server_info":{
+"instance_name":"phcdb7",
+"database_version":"19.0",
+"charset":"AMERICAN_AMERICA.WE8MSWIN1252" 
+}
+,
+"primary_key_values":[
+{"column_name":"CD_FUNCAO",
+"data_type":"NUMBER",
+"old_value":"99676",
+"new_value":"99676" 
+}
+],
+"column_values":[
+{"column_name":"IE_SITUACAO",
+"data_type":"VARCHAR2",
+"old_value":"W",
+"new_value":"A" 
+},
+{"column_name":"DT_ATUALIZACAO",
+"data_type":"DATE",
+"old_value":"02\/02\/2024 16:14:51",
+"new_value":"02\/02\/2024 16:48:52" 
+},
+{"column_name":"NM_USUARIO",
+"data_type":"VARCHAR2",
+"old_value":"lhalves",
+"new_value":"srcunha" 
+}
+]
+}
+]}
